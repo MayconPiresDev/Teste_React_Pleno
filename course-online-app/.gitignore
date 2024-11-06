@@ -1,0 +1,76 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Diretórios de sistema
+.DS_Store
+Thumbs.db
+
+# Ambiente
+.env
+.env.local
+.env.*.local
+
+# Dependências
+/node_modules
+/.pnp
+.pnp.js
+
+# Compilação
+/build
+/dist
+/out
+/.next
+.cache
+coverage
+lib-cov
+
+# Arquivos temporários do editor
+*.swp
+*~
+.project
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Diretórios de docker e ci
+docker-compose.override.yml
+.docker
+.dockerignore
+
+# Testes e relatórios de cobertura
+/coverage
+/junit.xml
+/nyc_output
+/.nyc_output
+tap-output.log
+.nyc_output/
+
+# Outras configurações específicas de ambiente
+*.local
+*.local.*
+*.log
+
+# Cache
+.cache
+.parcel-cache
+/.turbo
+
+# Ignora todos os arquivos temporários do sistema
+*.tmp
+*.temp
+
+# Arquivos de exportação
+*.zip
+*.tar.gz
+
+# Documentação gerada
+/typedoc
+/docs/
+
+# Exclusões específicas para Next.js
+.next/
