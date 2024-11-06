@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  backend:
+    build:
+      context: ./backend
+    volumes:
+      - ./backend:/app
+      - /app/node_modules  # Ignora node_modules para evitar problemas de compatibilidade
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=development
+    command: npx nodemon src/server.ts  # Usa nodemon para o hot-reload
+
+  frontend:
+    build:
+      context: ./frontend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules  # Ignora node_modules também no frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+    command: npm run dev  # Inicia o servidor de desenvolvimento do frontend
+
